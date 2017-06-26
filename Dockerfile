@@ -1,5 +1,6 @@
 
 FROM ubuntu:latest
 MAINTAINER nullun <nullun@null>
-RUN apt-get install shadowsocks -y
+RUN apt-get install python-pip
+RUN pip install shadowsocks
 EXPOSE 5555
