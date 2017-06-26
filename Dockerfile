@@ -6,7 +6,8 @@
 FROM alpine:latest
 MAINTAINER nullun 
 
-RUN apk update && apk add py-pip && pip install shadowsocks && alias gfw='/usr/bin/ssserver'
+RUN apk update && apk add py-pip && pip install shadowsocks
+RUN alias gfw='/usr/bin/ssserver'
 # ENTRYPOINT ["/usr/bin/ssserver"]
 
 # FROM alpine:latest
