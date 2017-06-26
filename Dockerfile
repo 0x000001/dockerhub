@@ -7,8 +7,8 @@ FROM alpine:latest
 MAINTAINER nullun 
 
 RUN apk update && apk add py-pip && pip install shadowsocks
-RUN cp /usr/bin/ssserver /usr/bin/gfw
-# ENTRYPOINT ["/usr/bin/ssserver"]
+
+ENTRYPOINT ["/usr/bin/ssserver"]
 
 # FROM alpine:latest
 # MAINTAINER nullun 
